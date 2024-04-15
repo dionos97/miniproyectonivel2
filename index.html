@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a mi funval - API</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #007bff, #b8daff); /* Fondo degradado azul-celeste */
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ffffff;
+            color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a mi funval - API</h1>
+    <h2>¡Explora el mundo de la programación!</h2>
+    <button id="usuario">Juan Pérez</button>
+
+    <script>
+        // Redireccionar al cambiar de usuario
+        document.getElementById('usuario').onclick = function() {
+            window.location.href = '/cambiar-usuario';
+        };
+    </script>
+</body>
+</html>
